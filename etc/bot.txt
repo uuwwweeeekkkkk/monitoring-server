@@ -1,0 +1,4 @@
+1. chat BotFather untuk membuat akun Bot telegram /start
+2. https://api.telegram.org/bot<token_bot>/getUpdates
+3. kemudian ambil chat ID nya
+
