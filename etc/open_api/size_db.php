@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 // Set header untuk memberitahu bahwa ini adalah respons JSON
 header('Content-Type: application/json');
 
-$koneksi = mysqli_connect("localhost", "root", "kambingjawa", "information_schema");
+$koneksi = mysqli_connect("localhost", "root", "", "information_schema");
 
 $query = mysqli_query($koneksi, "SELECT
                                         table_schema AS nm_db,

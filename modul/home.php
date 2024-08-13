@@ -160,13 +160,14 @@
                                             var totalSpace = data.totalSpaceGB
                                             var usedSpace = data.usedSpaceGB
                                             var freeSpace = data.freeSpaceGB
+                                            var os = data.os
 
                                             totalPerc = Math.round(usedSpace / totalSpace * 100);
                                             var progressBar_<?= $dataSpace['id_ip']; ?> = document.getElementById('progressBar_' + <?= $dataSpace['id_ip']; ?>);
 
                                             progressBar_<?= $dataSpace['id_ip']; ?>.style.width = totalPerc + '%';
 
-                                            document.getElementById('totalSpace_<?= $dataSpace['id_ip']; ?>').innerHTML = 'Server Storage <b><?= $dataSpace['ip_address']; ?></b>, Total Space: <b>' + totalSpace + ' GB</b>';
+                                            document.getElementById('totalSpace_<?= $dataSpace['id_ip']; ?>').innerHTML = 'Server Storage <b title="' + os + '"><?= $dataSpace['ip_address']; ?></b>, Total Space: <b>' + totalSpace + ' GB</b>';
                                             document.getElementById('usedSpace_<?= $dataSpace['id_ip']; ?>').innerHTML = 'Used Space (' + totalPerc + '%): <b>' + usedSpace + ' GB</b>';
                                             document.getElementById('freeSpace_<?= $dataSpace['id_ip']; ?>').innerHTML = 'Free Space: <b>' + freeSpace + ' GB</b>';
 

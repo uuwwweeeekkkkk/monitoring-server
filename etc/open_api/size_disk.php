@@ -28,7 +28,8 @@ $freeSpaceGB = round($freeSpace / (1024 * 1024 * 1024), 2);
 $data = [
     'totalSpaceGB' => $totalSpaceGB,
     'usedSpaceGB' => $usedSpaceGB,
-    'freeSpaceGB' => $freeSpaceGB
+    'freeSpaceGB' => $freeSpaceGB,
+    'os' => php_uname()
 ];
 
 // Mengembalikan data sebagai respons JSON

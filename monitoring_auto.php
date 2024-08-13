@@ -11,6 +11,8 @@ $jumlahDown = 0;
 $hasil_ping = "";
 
 if (isInternetConnected()) {
+    echo "Monitoring sedang berlangsung..";
+
     // NAMPILIN SEMUA IP DIMASTER DATA
     $queryCek = mysqli_query($konek, "SELECT * FROM data_ip
 									-- WHERE id_ip NOT IN (SELECT ip_id FROM monitoring_rto
