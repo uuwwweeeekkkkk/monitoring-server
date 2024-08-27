@@ -40,7 +40,8 @@ $freeSpaceGB = $freeSpaceCGB + $freeSpaceDGB;
 $data = [
     'totalSpaceGB' => $totalSpaceDGB,
     'usedSpaceGB' => $usedSpaceDGB,
-    'freeSpaceGB' => $freeSpaceDGB
+    'freeSpaceGB' => $freeSpaceDGB,
+    'os' => php_uname()
 ];
 
 // Mengembalikan data sebagai respons JSON
