@@ -36,11 +36,11 @@ CREATE TABLE `data_ip` (
 /*Data for the table `data_ip` */
 
 insert  into `data_ip`(`id_ip`,`kd_ip`,`ip_address`,`nm_unit`,`kategori`,`pic_id`,`gps_x`,`gps_y`) values 
-(1,'SRV001','103.167.112.237','Server E-Fin','Server Application',1,'-6.2386491','106.8215035'),
-(2,'SRV002','e-boss.ekanuri.co.id','Server E-Boss','Server Application',2,'-6.2386491','106.8215035'),
-(3,'SRV003','103.21.206.170','Server Agency','Server Application',1,'-6.2386491','106.8215035'),
-(4,'SRV004','101.255.125.19','Server HW','Server Application',1,'-6.1656691','106.8168236'),
-(5,'SRV005','103.167.112.238','Server Cloud','Server File',1,'','');
+(1,'SRV001','localhost','Server 1','Server Application',1,'-6.2386491','106.8215035'),
+(2,'SRV002','127.0.0.1','Server 2','Server Application',2,'-6.2386491','106.8215035'),
+(3,'SRV003','facebook.com','Server Agency','Server Application',1,'-6.2386491','106.8215035'),
+(4,'SRV004','google.com','Server HW','Server Application',1,'-6.1656691','106.8168236'),
+(5,'SRV005','nextcloud.com','Server Cloud','Server File',1,'','');
 
 /*Table structure for table `monitoring_rto` */
 
